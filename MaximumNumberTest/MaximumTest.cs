@@ -12,16 +12,19 @@ namespace MaximumNumberTest
         [TestMethod]
         public void GivenMaxNumFirstPosition_whenFindMaxNum_shouldReturnsMaxFirst()
         {
-            int actualMax = MaximumNumberCheck.MaximumIntegerNumber(225, 100, 14);
+            GenericMaximum<int> intMaxValue = new GenericMaximum<int>(225, 100, 24);
+            int actualMax = intMaxValue.MaxMethod();
             Assert.AreEqual(225, actualMax);
         }
+
         /// <summary>
         /// Test case 1.2
         /// </summary>
         [TestMethod]
         public void GivenMaxNumSecondPosition_whenFindMaxNum_shouldReturnsMaxSecond()
         {
-            int actualMax = MaximumNumberCheck.MaximumIntegerNumber(225, 375, 157);
+            GenericMaximum<int> intMaxValue = new GenericMaximum<int>(225, 375, 157);
+            int actualMax = intMaxValue.MaxMethod();
             Assert.AreEqual(375, actualMax);
         }
 
@@ -31,16 +34,19 @@ namespace MaximumNumberTest
         [TestMethod]
         public void GivenMaxNumThirdPosition_whenFindMaxNum_shouldReturnsMaxThird()
         {
-            int actualMax = MaximumNumberCheck.MaximumIntegerNumber(225, 375, 467);
+            GenericMaximum<int> intMaxValue = new GenericMaximum<int>(225, 375, 467);
+            int actualMax = intMaxValue.MaxMethod();
             Assert.AreEqual(467, actualMax);
         }
+
         /// <summary>
         /// Test case 2.1
         /// </summary>
         [TestMethod]
         public void GivenFloatNumFirstPostion_whenFindMax_shouldReturnsMaxFirst()
         {
-            double actualMax = MaximumNumberCheck.MaximumFloatNumber(55.5, 40.5, 20.5);
+            GenericMaximum<double> floatMaxValue = new GenericMaximum<double>(55.5, 40.5, 20.5);
+            double actualMax = floatMaxValue.MaxMethod();
             Assert.AreEqual(55.5, actualMax);
         }
 
@@ -50,7 +56,8 @@ namespace MaximumNumberTest
         [TestMethod]
         public void GivenFloatNumSecondPostion_whenFindMax_shouldReturnsMaxSecondPosition()
         {
-            double actualMax = MaximumNumberCheck.MaximumFloatNumber(40.5, 55.5, 20.5);
+            GenericMaximum<double> floatMaxValue = new GenericMaximum<double>(40.5, 55.5, 20.5);
+            double actualMax = floatMaxValue.MaxMethod();
             Assert.AreEqual(55.5, actualMax);
         }
 
@@ -60,16 +67,19 @@ namespace MaximumNumberTest
         [TestMethod]
         public void GivenFloatNumThirdPostion_whenFindMax_shouldReturnsMaxThirdPosition()
         {
-            double actualMax = MaximumNumberCheck.MaximumFloatNumber(40.5, 20.5, 55.5);
+            GenericMaximum<double> floatMaxValue = new GenericMaximum<double>(40.5, 20.5, 55.5);
+            double actualMax = floatMaxValue.MaxMethod();
             Assert.AreEqual(55.5, actualMax);
         }
+
         /// <summary>
         /// Test 3.1
         /// </summary>
         [TestMethod]
         public void GivenMaxStringFirstPositon_whenFindMax_shouldReturnsMaxFirstPosition()
         {
-            string actualMax = MaximumNumberCheck.MaximumString("Banana", "Peach", "Apple");
+            GenericMaximum<string> stringMaximum = new GenericMaximum<string>("Peach", "Banana", "Apple");
+            string actualMax = stringMaximum.MaxMethod();
             Assert.AreEqual("Peach", actualMax);
         }
 
@@ -77,9 +87,10 @@ namespace MaximumNumberTest
         /// Test 3.2
         /// </summary>
         [TestMethod]
-        public void givenMaxStringSecondPositon_whenFindMax_shouldReturnsMaxSecondPosition()
+        public void GivenMaxStringSecondPositon_whenFindMax_shouldReturnsMaxSecondPosition()
         {
-            string actualMax = MaximumNumberCheck.MaximumString("Peach", "Banana", "Apple");
+            GenericMaximum<string> stringMaximum = new GenericMaximum<string>("Banana", "Peach", "Apple");
+            string actualMax = stringMaximum.MaxMethod();
             Assert.AreEqual("Peach", actualMax);
         }
 
@@ -87,9 +98,10 @@ namespace MaximumNumberTest
         /// Test 3.3
         /// </summary>
         [TestMethod]
-        public void givenMaxStringThirdPositon_whenFindMax_shouldReturnsMaxThirdPosition()
+        public void GivenMaxStringThirdPositon_whenFindMax_shouldReturnsMaxThirdPosition()
         {
-            string actualMax = MaximumNumberCheck.MaximumString("Peach", "Apple", "Banana");
+            GenericMaximum<string> stringMaximum = new GenericMaximum<string>("Apple", "Banana", "Peach");
+            string actualMax = stringMaximum.MaxMethod();
             Assert.AreEqual("Peach", actualMax);
         }
     }
