@@ -4,7 +4,7 @@ namespace MaximumNumber
 {
     public class MaximumNumberCheck
     {
-        public static int MaximumNumber(int firstValue, int secondValue, int thirdValue)
+        public static int MaximumIntegerNumber(int firstValue, int secondValue, int thirdValue)
         {
             if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
             {

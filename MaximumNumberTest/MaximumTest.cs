@@ -12,7 +12,7 @@ namespace MaximumNumberTest
         [TestMethod]
         public void GivenMaxNumFirstPosition_whenFindMaxNum_shouldReturnsMaxFirst()
         {
-            int actualMax = MaximumNumberCheck.MaximumNumber(225, 100, 14);
+            int actualMax = MaximumNumberCheck.MaximumIntegerNumber(225, 100, 14);
             Assert.AreEqual(225, actualMax);
         }
         /// <summary>
@@ -21,7 +21,7 @@ namespace MaximumNumberTest
         [TestMethod]
         public void GivenMaxNumSecondPosition_whenFindMaxNum_shouldReturnsMaxSecond()
         {
-            int actualMax = MaximumNumberCheck.MaximumNumber(225, 375, 157);
+            int actualMax = MaximumNumberCheck.MaximumIntegerNumber(225, 375, 157);
             Assert.AreEqual(375, actualMax);
         }
 
@@ -31,7 +31,7 @@ namespace MaximumNumberTest
         [TestMethod]
         public void GivenMaxNumThirdPosition_whenFindMaxNum_shouldReturnsMaxThird()
         {
-            int actualMax = MaximumNumberCheck.MaximumNumber(225, 375, 467);
+            int actualMax = MaximumNumberCheck.MaximumIntegerNumber(225, 375, 467);
             Assert.AreEqual(467, actualMax);
         }
     }
