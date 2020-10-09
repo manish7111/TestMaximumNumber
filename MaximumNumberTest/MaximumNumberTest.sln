@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximumNumberTest", "Maximu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximumNumber", "..\MaximumNumber\MaximumNumber.csproj", "{F5A532FA-3D2D-4F2F-916D-28795D9FD405}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunMaximumNumber", "..\RunMaximumTest\RunMaximumNumber.csproj", "{074C77D8-EECB-41C7-9625-228F2ADB7358}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F5A532FA-3D2D-4F2F-916D-28795D9FD405}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5A532FA-3D2D-4F2F-916D-28795D9FD405}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5A532FA-3D2D-4F2F-916D-28795D9FD405}.Release|Any CPU.Build.0 = Release|Any CPU
+		{074C77D8-EECB-41C7-9625-228F2ADB7358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{074C77D8-EECB-41C7-9625-228F2ADB7358}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{074C77D8-EECB-41C7-9625-228F2ADB7358}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{074C77D8-EECB-41C7-9625-228F2ADB7358}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

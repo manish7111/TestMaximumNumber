@@ -49,5 +49,14 @@ namespace MaximumNumber
             var max = MaxValue(this.value);
             return max;
         }
+        /// <summary>
+        /// This method is printing maximum generic value
+        /// </summary>
+        /// <param name="values"></param>
+        public void PrintMaxValue()
+        {
+            var max = MaxValue(this.value);
+            Console.WriteLine("Maximum value is " + max);
+        }
     }
 }
